@@ -21,3 +21,13 @@ Additionally, in which regard the interpretation of the coefficients it was noti
 The overall conclusion is that, as a proof-of-concept study, this work has demonstrated that elasticities estimated by Bayesian methods potentially have practical application for rail demand forecasting. Further developments can bring it closer to reality with the adoption of dynamic effects - short and long-run, and restrictions on the supply side, particularly for *Advance* tickets.
 
 Beyond that, another development that could bring more precision for the train operating companies forecast is the estimation of elasticities applying hierarchical models, which might allow for the estimation route by route, even when few data are available.
+
+## Shared Content
+
+In this repository, I'll share 
+* The final version of my dissertation;
+* The latex files in which I've built up the dissertation;
+* R scripts of my analysis
+* R scripts of my graphs
+
+Unfortunately I'm not authorised to share the data since it is privately owned.
