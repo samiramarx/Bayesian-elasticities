@@ -1,0 +1,161 @@
+\documentclass[12pt,oneside,a4paper]{report}
+%-------------------------------------------------------
+% PACKAGES
+
+\usepackage{natbib}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% COMANDS FOR TABLE
+\usepackage{dcolumn}
+\usepackage{caption}
+\newcommand\fnote[1]{\captionsetup{font=scriptsize, format=hang}\caption*{#1}}
+\usepackage{float}                 % to force position of figures and tables
+\usepackage{fancyref}			   % to cross-referencing
+\usepackage{blindtext}			   % to create bullet lists
+\usepackage{enumitem}   		   % to enumerate lists
+\usepackage{multirow}			   % to create multirow and multicolumn tables
+\usepackage{booktabs} 			   % to format tables
+\usepackage{caption}			   % to use subfigures
+\usepackage{subcaption}
+\usepackage{pdflscape}			   % to rotate elements
+\usepackage[table]{xcolor}		   % to collor cells in tables - http://ctan.org/pkg/xcolor
+\usepackage{arydshln} 			   % for dashed lines in tables
+\usepackage{hyperref}
+\usepackage{rotating}
+\usepackage{titlesec}
+\titleformat{\chapter}
+  {\normalfont\LARGE\bfseries}{\thechapter}{1em}{}
+\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+
+%-------------------------------------------------------
+% CONFIG
+
+\graphicspath{{/Users/Samira/Dropbox/09-Transport-Economics-MSc/2-Semester2/TRAN5911_Transport-Dissertation/03-Dissertation/results/figs/}}
+
+%-------------------------------------------------------
+% PRE-TEXT CONTENT
+
+\title{Estimating Fare Elasticities of Rail Demand in Great Britain Using Bayesian Inference}
+\author{Samira Marx}
+\date{2017}
+
+%-------------------------------------------------------
+% TEXT BODY CONTENT
+
+\begin{document}
+
+\renewcommand{\thepage}{\roman{page}} % Roman page numbers
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        \textbf{ESTIMATING FARE ELASTICITIES OF RAIL DEMAND IN GREAT BRITAIN USING BAYESIAN INFERENCE}
+        
+        \vspace{1.5cm}
+
+		by
+
+        \vspace{1.5cm}
+        
+        \text{SAMIRA MARX PINHEIRO}
+        
+        \vspace{1.5cm}
+
+        
+        The dissertation is submitted by the Candidate \\
+        in Partial Fulfillment of the Requirements for the Degree of
+
+        \vspace{1.5cm}
+
+		MSc Transport Economics
+        
+        \vspace{1.5cm}
+
+Submission by the Candidate does not imply \\
+that its content or standard is endorsed by \\
+the Examiners.
+
+        \vfill
+        
+        Institute for Transporte Studies
+
+		\vspace{0.3cm}
+
+        University of Leeds
+        
+		\vspace{0.3cm}
+
+        September 2017
+        
+    \end{center}
+\end{titlepage}
+
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\pagebreak
+
+\listoffigures
+ 
+\listoftables
+
+\pagebreak
+
+\input{tex/00_executive-summary}
+
+\pagebreak
+
+% \pagenumbering{arabic} % Switch to normal numbers
+\renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
+
+\input{tex/01_introduction}
+\input{tex/02_literature-review}
+\input{tex/03_methods}
+\input{tex/04_results}
+\input{tex/05_discussion}
+
+%-------------------------------------------------------
+% POST-TEXT CONTENT
+
+% \renewcommand{\abstractname}{Acknowledgements}
+% \begin{abstract}
+% \renewcommand{\thepage}{\arabic{page}}% Arabic page numbers
+
+% This MSc was sponsored by Chevening Scholarships, the UK government’s global scholarship programme, funded by the Foreign and Commonwealth Office (FCO), in partnership with University of Leeds.
+
+% \end{abstract}
+
+
+% \section{References}
+\bibliographystyle{agsm}
+{\footnotesize
+\bibliography{references.bib}}
+
+\appendix
+
+% \input{tex/10_appendix_models}
+% \input{tex/11_appendix_sure}
+
+\begin{landscape} 
+\renewcommand\chaptername{Appendix}
+\chapter{Linear Models}
+\label{apd:linear_models}
+
+\begin{table} [H]
+  \caption{Linear models by market} 
+  \label{tbl:equation_panel} 
+\includegraphics[scale=0.7]{eq-panel}
+\caption*{Source: Own work}
+\end{table} 
+\end{landscape}
+
+
+\input{tex/12_appendix_bayes_weak}
+% \input{tex/13_appendix_bayes_T_quants}
+% \input{tex/13_appendix_bayes_T_autocorr_convergence}
+\input{tex/14_appendix_bayes_T_hdi}
+
+\end{document}
+
