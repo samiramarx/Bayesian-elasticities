@@ -1,0 +1,27 @@
+\chapter{Discussion}
+
+\section{Conclusion}
+
+Overall, the application of Bayesian econometrics in the estimation of rail fare elasticities have presented itself as a potential alternative to the current methods. As a proof of concept, this work has successfully worked Bayesian regressions estimating fare elasticities with coherent signs differentiating up to six fares in a market.
+
+The primary advantage is its efficiency to estimate correct algebraic sign elasticities. All elasticities estimates were in accordance to the what is expected from the PDFH. Even for the complex Market 4, in which the \textit{First Class} tickets were broken into \textit{Full}, \textit{Reduced} and \textit{Advance}, the Bayes estimation was able to revert ten wrong signs from the SURE/OLS estimates.
+
+The secondary advantage was the correlation being reverted to a useful feature that has helped to address the effects among correlated predictors due to the anti-correlation property of the estimates. When strong priors were defined the result was, generally, smaller standard deviations, which in turn means shorter ranges of credible values and more precise estimates.
+
+Another advantage of Bayesian statistics regards its inherent way of interpreting probabilities, since the interpretation of posterior distribution as actual probabilities interval is much more intuitive than interpreting confidence intervals, from the sampling theory approach.
+
+Even though the benefits, there were some issues that must be mentioned. Firstly, the occurrence of diverted transitions, which is an indicator of biased estimates. This kind of warning is supposed to raise a flag on the quality of the resulting posterior distributions. However, their occurrence may be directly related to the constraints applied in the domain of the prior distributions, which have prevented the MCMC to fully explore some regions of the parameter space. In this sense, this issue may be regarded a necessary evil to the easy application of constrained Bayes estimation in the data set.
+
+Additionally, it was clear that the estimation has lost in quality as the models increased in complexity. This can be noticed from the difference of precision between the Markets 1 and 2, with short HDI, against Markets 3 and 4, with wider ones. Nevertheless, the later estimates can still be considered useful if one is willing to trade-off uncertainty for precision. In this study the HDI adopted regarding a range of values that represented 95\% of the probability. If the degree of certainty is reduced, for instance for an HDI of 80\%, so it will be reduced the range of credible values.
+
+Also, in which regard the adequacy of the magnitude os estimates, even though it is recognised that it demands further development given the complexity of interactions affecting the fare elasticities, it must be pointed that some occurrences were notably out of expectations. Extremely high cross elasticities and cross elasticities bigger than the own elasticities, for instance, may deserve attention. These issues must be further investigated.
+
+Nevertheless, acknowledging the weaknesses, the overall result was positive and with a potential practical application.
+
+\section{Next frontiers}
+
+As an introductory work on Bayesian econometrics applied to rail fare elasticities estimation there is plenty of further considerations that can improve the method.
+
+In general aspects, issues that have already considered in previous studies as dynamic elasticities and the quota control for \textit{Advance} tickets were out of scope. These elements are, however, of undeniable relevance. The first one regards the differentiation between short and long-run elasticities which helps understanding how the price effects across time, which part of the price sensitiveness is immediately and which is reflected in the long-run. Some studies have reported also a cumulative effect (immediate + future) - for instance, the impact of promotions (Kopalle et al (1999) in \cite{liu2009}). The second one regards the fact that \textit{Advance} tickets are not available for all passenger, since they may sell out quickly. This supply restriction must be taken into account.
+
+Specifically, regarding Bayesian econometrics, another possibility of should to be explored is the adoption of hierarchical models. As discussed in Chapter \ref{chp:lit-rev}, hierarchical models are being successfully applied in the retail market to estimate cross elasticities of competitors products. The rail fares have an inherent meaningful hierarchical nature that can be explored. Analogously to the retail market, in which national elasticities are decomposed to store-to-store elasticities, being able to keep regional market features, so can the broad fare elasticities be decomposed, even to route-specific elasticities. This could be a promising method to increase the ability of train operating companies in managing fares.
