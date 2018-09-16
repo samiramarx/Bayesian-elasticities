@@ -27,7 +27,6 @@ Beyond that, another development that could bring more precision for the train o
 In this repository, I'll share 
 * The final version of my dissertation;
 * The latex files in which I've built up the dissertation;
-* R scripts of my analysis
-* R scripts of my graphs
+* R scripts of my analysis and graphs
 
 Unfortunately I'm not authorised to share the data since it is privately owned.
