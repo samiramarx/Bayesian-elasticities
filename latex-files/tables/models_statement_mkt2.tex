@@ -1,0 +1,37 @@
+
+\begin{table}[!ht] \centering 
+  \caption{Estimated models - Market 2} 
+  \label{tbl:models_statement_mkt2} 
+{\renewcommand\arraystretch{1.25}}
+\begin{tabular} {ll}
+\toprule
+\multirow{7}{*}{$V_{2F}$} &$lnV_{2Fi} \sim Normal(\mu_i, \sigma) $ \\
+                          &$\mu_i = g \cdot ln \text{GVA}_i + f_{2F} \cdot lnP_{2Fi} + f_{2R} \cdot lnP_{2Ri} + f_{2A} \cdot lnP_{2Ai} + \gamma \cdot ln\text{GJT}_i$ \\
+                          &$g \sim Normal (0,1) \quad T[0,\quad]$\\
+                          &$f_{2F} \sim Normal (-0.5,0.5) \quad T[\quad,0]$\\
+                          &$f_{2R} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$f_{2A} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$\gamma \sim Normal (0,1)  \quad T[\quad,0]$\\
+                          &$\sigma \sim uniform(0,\infty) $\\ 
+\hline
+\multirow{7}{*}{$V_{2R}$} &$lnV_{2Ri} \sim Normal(\mu_i, \sigma) $ \\
+                          &$\mu_i = g \cdot ln \text{GVA}_i + f_{2F} \cdot lnP_{2Fi} + f_{2R} \cdot lnP_{2Ri} + f_{2A} \cdot lnP_{2Ai} + \gamma \cdot ln\text{GJT}_i$ \\
+                          &$g \sim Normal (0,1) \quad T[0,\quad]$\\
+                          &$f_{2F} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$f_{2R} \sim Normal (-0.5,0.5) \quad T[\quad,0]$\\
+                          &$f_{2A} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$\gamma \sim Normal (0,1)  \quad T[\quad,0]$\\
+                          &$\sigma \sim uniform(0,\infty) $\\ 
+\hline
+\multirow{7}{*}{$V_{2A}$} &$lnV_{2Ai} \sim Normal(\mu_i, \sigma) $ \\
+                          &$\mu_i = g \cdot ln \text{GVA}_i + f_{2F} \cdot lnP_{2Fi} + f_{2R} \cdot lnP_{2Ri} + f_{2A} \cdot lnP_{2Ai} + \gamma \cdot ln\text{GJT}_i$ \\
+                          &$g \sim Normal (0,1) \quad T[0,\quad]$\\
+                          &$f_{2F} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$f_{2R} \sim Normal (0.5,0.5) \quad T[0,\quad]$\\
+                          &$f_{2A} \sim Normal (-0.5,0.5) \quad T[\quad,0]$\\
+                          &$\gamma \sim Normal (0,1)  \quad T[\quad,0]$\\
+                          &$\sigma \sim uniform(0,\infty) $\\ 
+\bottomrule
+\end{tabular}%
+\caption*{Source: Own work}
+\end{table} 
